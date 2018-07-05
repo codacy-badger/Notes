@@ -12,4 +12,3 @@ cache:
 test_script:
   - node -v
   - npm -v
-  - npm test
