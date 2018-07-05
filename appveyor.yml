@@ -6,6 +6,7 @@ install:
 branches:
   only:
     - master
+build: off
 cache:
   - node_modules
 test_script:
