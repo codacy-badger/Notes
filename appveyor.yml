@@ -1,0 +1,14 @@
+environment:
+  nodejs_version: "8"
+install:
+  - npm install -g grunt-cli
+  - npm install
+branches:
+  only:
+    - master
+cache:
+  - node_modules
+test_script:
+  - node -v
+  - npm -v
+  - npm test

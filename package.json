@@ -1,0 +1,53 @@
+{
+  "name": "devnote",
+  "version": "1.0.0",
+  "description": "Note Application For Developers & Designers",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "sync": "grunt browserSync",
+    "test": "istanbul cover src/js/*.js && codecov",
+    "build":"grunt deploy",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmetzeybek/Notes.git"
+  },
+  "keywords": [
+    "note",
+    "todo",
+    "developer",
+    "designer"
+  ],
+  "author": "Ahmet Zeybek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmetzeybek/Notes/issues"
+  },
+  "homepage": "https://github.com/ahmetzeybek/Notes#readme",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "codacy-coverage": "^2.1.1",
+    "codecov": "^3.0.2",
+    "gh-pages": "^1.2.0",
+    "grunt": "^1.0.3",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "remap-istanbul": "^0.11.0"
+  },
+  "dependencies": {}
+}

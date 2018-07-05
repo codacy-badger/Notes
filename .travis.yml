@@ -1,0 +1,24 @@
+language: node_js
+sudo: false
+branches:
+  only:
+  - master
+node_js:
+  - "8"
+before_script:
+  - npm install -g grunt-cli
+install:
+  - npm install
+script:
+  - npm test
+# after_script:
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: dist
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+notifications:
+  slack: pixxelmedia:6UtqfnCTfNQmwI2Y32ZvIDAd
